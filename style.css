@@ -1,0 +1,137 @@
+body{
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#buttonbox{
+    position: sticky;
+    margin-left: 60%;
+    top: 0;
+    z-index: 1000;
+}
+.btn{
+    height: 40px;
+    font-size: 25px;
+    border:none;
+    border-radius: 30px;
+    background-color: rgb(18, 17, 17);
+    color:aliceblue;
+}
+.active{
+    background-color: rgb(92, 187, 187);
+    color: black;
+}
+.btn:hover{
+    background-color: rgb(54, 116, 170);
+    color:black;
+    cursor:pointer;
+}
+.inactive{
+    display: none;
+}
+.homepage{
+    display: flex;
+}
+#hey{
+    margin-top: 15%;
+    margin-left: auto;
+}
+#greet{
+    color: aliceblue;
+    font-size: 30px;
+}
+#name{
+    margin-top: 3%;
+    color: aliceblue;
+    font-size: 50px;
+}
+#enthu{
+    color: rgb(51, 209, 223);
+    font-size: 25px;
+    margin-left: 3%;
+}
+#photo{
+    margin-left: 10%;
+    margin-top: 3%;
+    width: auto;
+    height: 570px;
+}
+/* #photo:hover{
+    width: auto;
+    height: 550px;
+    cursor: pointer;
+} */
+.skillpage{
+    color: aliceblue;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+#skills{
+    font-size: 70px;
+}
+#learning{
+    font-size: 70px;
+}
+#tool{
+    font-size: 70px;
+}
+#interest{
+    font-size: 70px;
+}
+.aboutpage{
+    text-align: center;
+    color:aliceblue;
+}
+#aboutme{
+    margin-top: 10%;
+    font-size: 50px;
+}
+#aboutlist{
+    font-size: 30px;
+}
+#edu{
+    font-size: 50px;
+    margin-top: 100px;
+}
+#edulist{
+    font-size: 30px;
+}
+#por{
+    font-size: 50px;
+    margin-top: 100px;
+}
+#porlist{
+    font-size: 30px;
+}
+#phone{
+    color:aliceblue;
+    line-height: 3;
+    font-size: 50px;
+    text-align: center;
+}
+.contactpage {
+    margin-top: 10%;
+    text-align: center;
+}
+#list{
+    font-size: 30px;
+}
+#trans {
+    display: none;
+    position: fixed;
+    left: -600px;
+    height: 100%;
+    width: auto;
+    transition: left 1s ease;
+}
+#flexone{
+    display: flex;
+}
+#flextwo{
+    display: flex;
+}
+#crazy{
+    margin-left: 0;
+    width: 100%;
+}
