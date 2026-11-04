@@ -1,104 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <title>Akshat Kansal</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <img src="images/trans.png" id="trans">
-    <div id="buttonbox">
-        <button class="btn" id="home">Home</button>
-        <button class="btn" id="skill">Skills and Interests</button>
-        <button class="btn" id="about">About</button>
-        <button class="btn" id="contact">Contact</button>
-    </div>
-    <div id="homepage">
-        <div class="homepage">
-            <div id="hey">
-                <div id="greet">Hello I'm,</div>
-                <div id="name">AKSHAT KANSAL</div>
-                <div id="enthu">Sci-Tech Enthusiast</div>           
-            </div>
-            <img src="images/name.png" id="photo">
-        </div>
-    </div>
-    <div id="skillpage" >
-        <div class="skillpage">
-            <div id="skills">Skills:</div>
-            <div id="list">
-                <ul>
-                    <li>Web-Developer</li>
-                    <li>Arduino</li>
-                </ul>
-            </div>
-            <div id="learning">Learning</div>
-            <div id="list">
-                <ul>
-                    <li>More about Development</li>
-                    <li>DSA</li>
-                    <li>Open-CV Library</li>
-                    <li>Cyber-Sec</li>
-                </ul>                  
-            </div>
-            <div id="tool">Tools</div>
-            <div id="list">
-                <ul>
-                    <li>VS-code</li>
-                    <li>Git-Hub</li>
-                    <li>Linux</li>
-                </ul>
-            </div>
-            <div id="interest">Interests</div>
-            <div id="list">
-                <ul>
-                    <li>BasketBall</li>
-                    <li>Video-Editing</li>
-                    <li>Singing</li>
-                </ul>
-            </div>
-            <img src="images/skill.png" id="crazy">
-        </div>
-    </div>
-    <div id="aboutpage" >
-        <div class="aboutpage">
-            <div id="aboutme">About Me</div>
-            <div id="aboutlist">
-                I’m someone who loves exploring every field <br>
-                In technology I am exploring both on the software and hardware side.<br>
-                I'm working on Development and Cybersec <br>
-                I’ve been building Arduino projects since childhood.<br>
-                Right now, I’m constantly learning new things to expand my skills.
-            </div>
-            <div id="edu">Education</div>
-            <div id="edulist">
-                <div id="school">Schooling : SICA SCHOOL<br>
-                class 10th: 90.4%<br>
-                class 12th: 88.6%<br>
-                Entrance Exams <br>
-                JEE Mains Rank:  12050 <br>
-                JEE Advance Rank: 6192 <br>
-                College : IIT Bhilai<br>
-                Course: B.Tech <br>
-                Branch : CSE <br>
-                CGPA : 8.64 <br>
-                </div>
-            </div>
-            <div id="por">Club Activities and PORs</div>
-            <div id="porlist">BasketBall Core <br>
-            Drishya Member <br>
-            FPS Member <br>
-            E-cell Outreach Member
-            </div>
-        </div>
-    </div>
-    <div id="contactpage" class="contactpage">
-        <div id="phone">
-        <div id="w">Whatsapp Number : 7898321171</div>
-        <a href="https://www.instagram.com/akshat.757/" target="_blank">Instagram: akshat.757</a>
-        <div id="e"> E-mail: kansal.akshat757@gmail.com
-        akshatkansal@iitbhilai.ac.in</div>
-        </div>
-    </div>
-    <script src="script.js"></script>  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akshat Kansal / Backend Engineer</title>
+    <meta name="description" content="Backend engineer. Full stack when needed. Designer when nobody's looking." />
+    <script>
+      // Set the theme before first paint so there's no flash.
+      try {
+        var t = localStorage.getItem('theme')
+        if (t !== 'dark' && t !== 'light') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+        document.documentElement.dataset.theme = t
+      } catch (e) {
+        document.documentElement.dataset.theme = 'light'
+      }
+      // Start the mascot preview download right away, before the app boots.
+      // Same WebKit check as ScrollVideo.jsx (Safari gets the MP4).
+      var l = document.createElement('link')
+      l.rel = 'preload'
+      l.as = 'fetch'
+      l.crossOrigin = 'anonymous'
+      l.href = /^((?!chrome|android).)*safari/i.test(navigator.userAgent) ? '/mascot/lo.mp4' : '/mascot/lo.webm'
+      document.head.appendChild(l)
+    </script>
+    <link rel="preload" as="image" href="/mascot/poster.webp" fetchpriority="high" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
